@@ -92,7 +92,6 @@ html, body {
 
 .overlay{
    position: absolute;
-   border: 2px solid red;
    display: block;
    cursor: pointer;
    text-decoration: none;
