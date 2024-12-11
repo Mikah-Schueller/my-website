@@ -18,17 +18,3 @@ Image Citations
 
 Font Citations:
 - Francois One: Google Fonts
-
-Music Citations:
-- 
-
-IDEAS:
-- oscilating fan
-- fedora on coat rack
-
-Cork Board
-- Linked In
-- Resume
-- Github
-- My photo
-- Contact (Email)
