@@ -1,0 +1,361 @@
+html, body {
+   margin: 0; 
+   padding: 0;
+   width: 100vw; 
+   height: 100vh; 
+   overflow: hidden; 
+   background: rgb(51,51,51);
+   background-image: radial-gradient(circle, rgba(51,51,51, 0.8) -20%, rgba(51,51,51, 0.8) 50%, rgba(51,51,51, 1) 100%);
+   background-position: center;
+   background-repeat: no-repeat;
+
+   font-family: "Francois One", sans-serif;
+   font-weight: 400;
+   font-style: italic;
+}
+
+#header{
+   display: flex;
+   width: 100%;
+   height: 20px;
+   background-color: rgb(31, 31, 31);
+   position: relative;
+   z-index: 2;
+}
+
+#swingingLightContainer{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   position: absolute;
+   top: -20px;
+   z-index: 1;
+}
+
+@property --angle{
+   syntax: "<angle>";
+   initial-value: 0deg;
+   inherits: false;
+}
+
+#swingingLight{
+   width: auto;
+   height: 100vh;
+   animation: swing 8s linear infinite, flicker 5.3s linear infinite;
+   transform-origin: 50% 0;
+   transform: rotate(calc(cos(var(--angle)) * 15deg));
+}
+
+@keyframes swing {
+   from{
+      --angle: 0deg;
+   }
+   to{
+      --angle: 360deg;
+   }
+}
+
+@keyframes flicker {
+   0%{
+      opacity: 1;
+   }
+
+   3%{
+      opacity: 0.65;
+   }
+
+   6%{
+      opacity: 1;
+   }
+
+}
+
+#detectiveBoardContainer{
+   display: flex;
+   width: 100%;
+   bottom: 450px;
+   opacity: 0.8;
+   justify-content: center;
+   position: absolute;
+   z-index: 3;
+}
+
+#detectiveBoard{
+   width: 300px;
+}
+
+#overlayContainer{
+   display: flex;
+   position: absolute;
+   justify-content: center;
+}
+
+.overlay{
+   position: absolute;
+   border: 2px solid red;
+   display: block;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.overlay:nth-child(1) {
+   top: 20px;
+   left: -128px;
+   width: 65px;
+   height: 83px;
+}
+
+.overlay:nth-child(2) {
+   top: 100px;
+   left: -66px;
+   width: 120px;
+   height: 98px;
+}
+
+.overlay:nth-child(3) {
+   top: 110px;
+   left: -138px;
+   width: 70px;
+   height: 80px;
+}
+
+.overlay:nth-child(4) {
+   top: 18px;
+   left: -1px;
+   width: 120px;
+   height: 78px;
+}
+
+#deskContainer{
+   display: flex;
+   width: 100%;
+   bottom: 0px;
+   justify-content: center;
+   position: absolute;
+   z-index: 3;
+}
+
+#desk {
+   width: 400px;
+}
+
+#desktop{
+   display: flex;
+   bottom: 207px;
+   justify-content: center;
+   align-items: flex-end;
+   width: 100%;
+   position: absolute;
+   z-index: 4;
+}
+
+#phone{
+   width: 90px;
+   height: 50px;
+   margin: 0 0 24px 0;
+}
+
+#typewriter{
+   margin: 0 0 5px -20px;
+   opacity: 0.7;
+   width: 150px;
+}
+
+#glass{
+   margin: 0 0 15px -20px;
+   width: 65px;
+   opacity: 0.5;
+}
+
+#lamp{
+   margin: 0 0 10px -60px;
+   width: 150px;
+}
+
+#nameContainer{
+   width: 100%;
+   bottom: 0;
+   height: 460px;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   z-index: 11;
+}
+
+#name{
+   color: rgb(51,51,51);
+   position: absolute;
+   font-size: 44px;
+   top: 0;
+}
+
+#flashlight{
+   display: hidden;
+}
+
+@media (min-width: 768px) {
+   #swingingLightContainer{
+      top: -40px;
+   }
+   #detectiveBoardContainer{
+      bottom: 510px;
+   }
+   #detectiveBoard{
+      width: 400px;
+   }
+   .overlay:nth-child(1) {
+      top: 28px;
+      left: -168px;
+      width: 85px;
+      height: 110px;
+   }
+   .overlay:nth-child(2) {
+      top: 135px;
+      left: -85px;
+      width: 155px;
+      height: 130px;
+   }
+   .overlay:nth-child(3) {
+      top: 148px;
+      left: -180px;
+      width: 92px;
+      height: 102px;
+   }
+   .overlay:nth-child(4) {
+      top: 19px;
+      left: 2px;
+      width: 160px;
+      height: 110px;
+   }
+
+   #desk {
+      width: 500px;
+   }
+
+   #desktop{
+      bottom: 260px;
+   }
+   #phone{
+      width: 100px;
+      height: 60px;
+      margin: 0 0 24px 0;
+   }
+   #typewriter{
+      margin: 0 0 5px -20px;
+      width: 180px;
+   }
+   #glass{
+      margin: 0 0 15px -20px;
+      width: 75px;
+   }
+   #lamp{
+      margin: 0 0 10px -70px;
+      width: 180px;
+   }
+
+   #nameContainer{
+      height: 550px;
+   }
+   #name{
+      font-size: 55px;
+   }
+}
+
+@media (min-width: 1200px) {
+   #swingingLightContainer{
+      top: -40px;
+   }
+   #detectiveBoardContainer{
+      bottom: 440px;
+   }
+   #detectiveBoard{
+      width: 500px;
+   }
+   .overlay:nth-child(1) {
+      top: 35px;
+      left: -208px;
+      width: 108px;
+      height: 138px;
+   }
+   .overlay:nth-child(2) {
+      top: 170px;
+      left: -105px;
+      width: 195px;
+      height: 162px;
+   }
+   .overlay:nth-child(3) {
+      top: 185px;
+      left: -225px;
+      width: 118px;
+      height: 128px;
+   }
+   .overlay:nth-child(4) {
+      top: 25px;
+      left: 4px;
+      width: 200px;
+      height: 135px;
+   }
+
+   #deskContainer{
+      bottom: -156px;
+   }
+   #desk {
+      width: 600px;
+   }
+
+   #desktop{
+      bottom: 160px;
+   }
+   #phone{
+      width: 110px;
+      height: 70px;
+      margin: 0 0 24px 0;
+   }
+   #typewriter{
+      margin: 0 0 5px -20px;
+      width: 200px;
+   }
+   #glass{
+      margin: 0 0 15px -20px;
+      width: 85px;
+   }
+   #lamp{
+      margin: 0 0 10px -80px;
+      width: 200px;
+   }
+
+   #nameContainer{
+      height: 490px;
+   }
+   #name{
+      font-size: 65px;
+   }
+
+   #flashlight{
+      display: inline-block;
+      position: absolute;
+      width: 200px; /* Size of the flashlight circle */
+      height: 200px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 1%, rgba(51, 51, 51, 0.9) 50%,  rgba(51, 51, 51, 0.95) 60%, rgba(51, 51, 51, 1) 100%);
+      border-radius: 50%;
+      pointer-events: none; /* Prevent blocking clicks */
+      mix-blend-mode: lighten; /* Blend the flashlight with the background */
+      transform: translate(-50%, -50%); /* Center the flashlight around the cursor */
+      z-index: 10; /* Keep it above the content */
+   }
+}
+
+#floorContainer{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   position: absolute;
+   z-index: 2;
+   bottom: 0;
+}
+
+#floor{
+   width: 100%;
+   height: 15vh;
+   border-top: 3px solid rgb(22, 22, 22);
+}
