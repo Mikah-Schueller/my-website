@@ -21,6 +21,28 @@ html, body {
    font-style: italic;
 }
 
+/* Ensure full-width containers actually fill width */
+#swingingLightContainer,
+#detectiveBoardContainer,
+#deskContainer,
+#desktop,
+#nameContainer,
+#floorContainer {
+   width: 100vw; /* Using viewport width instead of percentage */
+   max-width: 100%;
+   left: 0;
+   right: 0;
+   position: absolute;
+}
+
+/* For elements that should be at the bottom */
+#deskContainer,
+#floorContainer {
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
 @viewport {
    width: device-width;
    zoom: 1;
