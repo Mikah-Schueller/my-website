@@ -7,9 +7,7 @@ html, body {
    padding: 0;
    width: 100%; 
    height: 100vh; 
-   overflow-x: hidden; 
-   touch-action: manipulation; /* Limit zoom behavior */
-   -ms-touch-action: manipulation;
+   overflow: hidden; 
    overscroll-behavior-x: none; /* Prevent pull-to-refresh */
    background: rgb(51,51,51);
    background-image: radial-gradient(circle, rgba(51,51,51, 0.8) -20%, rgba(51,51,51, 0.8) 50%, rgba(51,51,51, 1) 100%);
@@ -19,33 +17,6 @@ html, body {
    font-family: "Francois One", sans-serif;
    font-weight: 400;
    font-style: italic;
-}
-
-/* Ensure full-width containers actually fill width */
-#swingingLightContainer,
-#detectiveBoardContainer,
-#deskContainer,
-#desktop,
-#nameContainer,
-#floorContainer {
-   width: 100vw; /* Using viewport width instead of percentage */
-   max-width: 100%;
-   left: 0;
-   right: 0;
-   position: absolute;
-}
-
-/* For elements that should be at the bottom */
-#deskContainer,
-#floorContainer {
-   bottom: 0;
-   left: 0;
-   right: 0;
-}
-
-@viewport {
-   width: device-width;
-   zoom: 1;
 }
 
 #header{
@@ -60,6 +31,9 @@ html, body {
 #swingingLightContainer{
    display: flex;
    width: 100%;
+   max-width: 100%;
+   max-height: 100%;
+   overflow: hidden;
    justify-content: center;
    position: absolute;
    top: -20px;
@@ -74,7 +48,8 @@ html, body {
 
 #swingingLight{
    width: auto;
-   height: 100vh;
+   height: 100%;
+   max-height: 100%;
    animation: swing 8s linear infinite, flicker 5.3s linear infinite;
    transform-origin: 50% 0;
    transform: rotate(calc(cos(var(--angle)) * 15deg));
