@@ -81,7 +81,7 @@ html, body {
 #detectiveBoardContainer{
    display: flex;
    width: 100%;
-   bottom: 450px;
+   top: 140px;
    opacity: 0.8;
    justify-content: center;
    position: absolute;
