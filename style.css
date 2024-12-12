@@ -8,6 +8,9 @@ html, body {
    width: 100%; 
    height: 100vh; 
    overflow-x: hidden; 
+   touch-action: manipulation; /* Limit zoom behavior */
+   -ms-touch-action: manipulation;
+   overscroll-behavior-x: none; /* Prevent pull-to-refresh */
    background: rgb(51,51,51);
    background-image: radial-gradient(circle, rgba(51,51,51, 0.8) -20%, rgba(51,51,51, 0.8) 50%, rgba(51,51,51, 1) 100%);
    background-position: center;
@@ -16,6 +19,11 @@ html, body {
    font-family: "Francois One", sans-serif;
    font-weight: 400;
    font-style: italic;
+}
+
+@viewport {
+   width: device-width;
+   zoom: 1;
 }
 
 #header{
