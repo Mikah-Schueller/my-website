@@ -267,9 +267,9 @@ html, body {
 #cta{
    transform: rotate(-2.5deg);
    position: absolute;
-   bottom: 10px;
+   bottom: 3px;
    width: 50px; 
-   font-size: 8px;
+   font-size: 7px;
 }
 
 #flashlight{
