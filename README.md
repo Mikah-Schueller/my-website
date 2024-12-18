@@ -5,9 +5,8 @@ Image Citations
 - Floor: iStock
 - Desk: Vecteezy
 - Typewriter: Vecteezy
-- Lamp: Pngtree
 - Phone: Wallpapers.com
-- Glass: Vecteezy
+- Turntable: Pinterest
 
 - Cork Board: Pixabay
 - Manila Filder: iStock
@@ -15,6 +14,9 @@ Image Citations
 - Newspaper: iStock
 - Envelope: Vecteezy
 - Recipt: Adobe Stock
+
+Music Citations:
+- https://www.fesliyanstudios.com/royalty-free-music/download/closed-curtains/2209
 
 Font Citations:
 - Francois One: Google Fonts
