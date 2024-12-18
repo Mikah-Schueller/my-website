@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       phone: {
          title: "Be the Next to Contact This Detective:",
-         content: "<i>(...The line’s busy — it always is. Better send an email if you want to get through.)</i>"
+         content: "<i>(...The line’s busy — it always is. Better send an email if you want to get through.)</i><br><br><a href='https://www.linkedin.com/in/mikah-schueller-7a8937272' target='_blank' rel='noopener noreferrer'>mikah.g.schueller@gmail.com</a>"
       },
       invoice: {
          title: "The Price of Innovation:",
