@@ -14,6 +14,7 @@ Image Citations
 - Newspaper: iStock
 - Envelope: Vecteezy
 - Recipt: Adobe Stock
+- Note: rawpixel
 
 - Typewriter paper modal: PngFind
 

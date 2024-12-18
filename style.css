@@ -248,6 +248,30 @@ html, body {
    top: 0;
 }
 
+#noteContainer{
+   display: flex;
+   width: 100%;
+   bottom: 50px;
+   justify-content: center;
+   position: absolute;
+   z-index: 5;
+}
+
+#note{
+   position: absolute;
+   bottom: 0px;
+   width: 70px;
+   height: 70px;
+}
+
+#cta{
+   transform: rotate(-2.5deg);
+   position: absolute;
+   bottom: 10px;
+   width: 50px; 
+   font-size: 8px;
+}
+
 #flashlight{
    display: hidden;
 }
