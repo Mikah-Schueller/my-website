@@ -135,7 +135,7 @@ html, body {
 #deskContainer{
    display: flex;
    width: 100%;
-   bottom: 0px;
+   bottom: -40px;
    justify-content: center;
    position: absolute;
    z-index: 4;
@@ -147,7 +147,7 @@ html, body {
 
 #desktop{
    display: flex;
-   bottom: 149px;
+   bottom: 109px;
    justify-content: center;
    align-items: flex-end;
    width: 100%;
@@ -156,21 +156,21 @@ html, body {
 }
 
 #phone{
-   width: 80px;
-   height: 40px;
-   margin: 0 0 24px 0;
+   width: 70px;
+   height: 35px;
+   margin: 0 0 24px -20px;
 }
 
 #typewriter{
-   margin: 0 0 5px -20px;
+   margin: 0 0 9px -12px;
    opacity: 0.7;
-   width: 130px;
+   width: 120px;
 }
 
 #gramophone{
-   margin: 0 0 5px -30px;
+   margin: 0 0 9px -20px;
    transform: scaleX(-1);
-   width: 150px;
+   width: 130px;
 }
 
 #gramophoneOverlay{
@@ -178,14 +178,14 @@ html, body {
    display: block;
    cursor: pointer;
    top: 5px;
-   right: 36px;
-   width: 140px;
-   height: 170px;
+   right: 62px;
+   width: 120px;
+   height: 145px;
 }
 
 #record{
-   width: 105px;
-   margin: 0px 0 30px -126px;
+   width: 91px;
+   margin: 0px 0 29px -110px;
    z-index: 8;
    --start-angle: 0deg;
    transform: rotateX(80deg) rotateZ(var(--start-angle));
