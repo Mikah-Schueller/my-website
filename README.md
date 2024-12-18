@@ -15,6 +15,8 @@ Image Citations
 - Envelope: Vecteezy
 - Recipt: Adobe Stock
 
+- Typewriter paper modal: PngFind
+
 Music Citations:
 - https://www.fesliyanstudios.com/royalty-free-music/download/closed-curtains/2209
 

@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Special+Elite&display=swap" rel="stylesheet">
    <script src="script.js" defer></script>
 
 </head>
@@ -23,6 +23,8 @@
          <a href="https://www.linkedin.com/in/mikah-schueller-7a8937272" target="_blank" rel="noopener noreferrer" class="overlay">&nbsp;</a>
          <a href="mailto:mikah.g.schueller@gmail.com" target="_blank" rel="noopener noreferrer" class="overlay">&nbsp;</a>
          <a href="https://github.com/Mikah-Schueller" target="_blank" rel="noopener noreferrer" class="overlay">&nbsp;</a>
+         <a class="overlay" id="invoice">&nbsp;</a>
+         <a class="overlay" id="confidential">&nbsp;</a>
       </div>
    </div>
    <div id="deskContainer">
@@ -36,13 +38,20 @@
       <img src="resources/images/Vinyl.png" alt="Vinyl record" id="record">
       <a id="gramophoneOverlay">&nbsp;</a>
       <audio id="music" src="resources/music.mp3" preload="auto" loop></audio>
-
    </div>
    <div id="nameContainer">
       <h1 id="name">Mikah Schueller</h1>
    </div>
    <div id="floorContainer">
       <img src="resources/images/Floor.jpg" alt="Wooden floor" id="floor">
+   </div>
+   <div id="modalContainer">
+      <img src="resources/images/Modal.png" alt="Modal of a torn paper background" id="modal">
+      <button id="close">x</button>
+      <div id="modalText">
+         <h1 id="modalTitle">Sample Title:</h1>
+         <h2 id="modalContent">Sample text sample text sample text</h2>
+      </div>
    </div>
    <div id="flashlight"></div>
 </body>
