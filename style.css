@@ -143,6 +143,19 @@ html, body {
 
 #desk {
    width: 300px;
+   z-index: 2;
+}
+
+#deskShadow{
+   position: absolute;
+   display: block;
+   cursor: pointer;
+   background:rgba(0, 0, 0, 0.85);
+   bottom: 0px;
+   right: 62px;
+   width: 240px;
+   height: 105px;
+   z-index: 1;
 }
 
 #desktop{
@@ -181,6 +194,7 @@ html, body {
    right: 62px;
    width: 120px;
    height: 145px;
+   z-index: 15;
 }
 
 #record{
