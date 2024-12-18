@@ -416,8 +416,8 @@ html, body {
 #close{
    position: absolute;
    z-index: 2;
-   top: 140px;
-   right: 50px;
+   top: 120px;
+   right: 30px;
    border: none;
    background: none;
    font-family: "Special Elite", serif;
