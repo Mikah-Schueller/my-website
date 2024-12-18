@@ -152,8 +152,8 @@ html, body {
    cursor: pointer;
    background:rgba(0, 0, 0, 0.85);
    bottom: 0px;
-   right: 62px;
-   width: 240px;
+   right: 75px;
+   width: 220px;
    height: 105px;
    z-index: 1;
 }
