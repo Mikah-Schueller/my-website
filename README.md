@@ -78,9 +78,9 @@ This theme was chosen to represent my creative problem-solving abilities and my 
 ## Contact Information
 
 If my work resonates with you, feel free to get in touch:
-- **GitHub**: [github.com/your-username](https://github.com/your-username)
-- **LinkedIn**: [linkedin.com/in/mikah-schueller](https://linkedin.com/in/mikah-schueller)
-- **Email**: mikah.schueller@example.com
+- **GitHub**: [mikah-schueller.github.io/my-website/](https://mikah-schueller.github.io/my-website/)
+- **LinkedIn**: [linkedin.com/in/mikah-schueller-7a8937272](https://www.linkedin.com/in/mikah-schueller-7a8937272)
+- **Email**: mikah.g.schueller@gmail.com
 
 ---
 
